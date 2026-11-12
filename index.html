@@ -499,6 +499,70 @@ const albumView = document.getElementById('album-view');
 const albumGrid = document.getElementById('album-grid');
 const albumEmpty = document.getElementById('album-empty');
 const albumTitle = document.getElementById('album-title');
+
+const NEW_PHOTOS = {
+  "foto-1418": {
+    src: "images/IMG_1418.jpeg",
+    alt: "Fotografia 1418",
+    title: "Fotografia 1418",
+    label: "Portfólio",
+    category: "portfolio"
+  },
+  "foto-1474": {
+    src: "images/IMG_1474.jpeg",
+    alt: "Fotografia 1474",
+    title: "Fotografia 1474",
+    label: "Portfólio",
+    category: "portfolio"
+  },
+  "foto-1484": {
+    src: "images/IMG_1484.jpeg",
+    alt: "Fotografia 1484",
+    title: "Fotografia 1484",
+    label: "Portfólio",
+    category: "portfolio"
+  },
+  "foto-1577": {
+    src: "images/IMG_1577.jpeg",
+    alt: "Fotografia 1577",
+    title: "Fotografia 1577",
+    label: "Portfólio",
+    category: "portfolio"
+  },
+  "foto-1623": {
+    src: "images/IMG_1623.jpeg",
+    alt: "Fotografia 1623",
+    title: "Fotografia 1623",
+    label: "Portfólio",
+    category: "portfolio"
+  },
+  "foto-1743": {
+    src: "images/IMG_1743.jpeg",
+    alt: "Fotografia 1743",
+    title: "Fotografia 1743",
+    label: "Portfólio",
+    category: "portfolio"
+  },
+  "foto-1824": {
+    src: "images/IMG_1824.jpeg",
+    alt: "Fotografia 1824",
+    title: "Fotografia 1824",
+    label: "Portfólio",
+    category: "portfolio"
+  },
+
+'foto-1562': {
+  src: 'images/IMG_1562.JPEG',
+  alt: 'Fotografia do treino de jiu-jítsu',
+  title: 'Will Bjj',
+  label: 'Jiu-jítsu',
+  category: 'sports'
+},
+
+};
+
+Object.assign(PHOTO_LIBRARY, NEW_PHOTOS);
+
 let photos = [];
 let selected = 0;
 let visiblePhotos = [];
@@ -515,12 +579,25 @@ const ALBUMS = {
     description: 'Arquitetura, encontros e luz pela cidade.',
     photoIds: ['st-paul']
   },
-  'will-bjj-2026-11-11': {
-    title: 'Will Bjj',
-    meta: 'Treino de jiu-jítsu · 11/11/2026',
-    description: 'Os registros do treino, reunidos em um só álbum.',
-    photoIds: []
-  },
+
+
+'will-bjj-2026-11-11': {
+  title: 'Will Bjj',
+  meta: 'Treino de jiu-jítsu · 11/11/2026',
+  description: 'Os registros do treino, reunidos em um só álbum.',
+  photoIds: [
+    'foto-1418',
+    'foto-1474',
+    'foto-1484',
+    'foto-1562',
+    'foto-1577',
+    'foto-1623',
+    'foto-1743',
+    'foto-1824'
+  ]
+},
+
+
   'takes-da-semana-2026-11-09': {
     title: 'Takes da semana',
     meta: 'Edição 9–15 de novembro de 2026',
